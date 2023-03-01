@@ -1,0 +1,211 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    padding-top: 205px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    &:after {
+        content:'';
+        display: block;
+        position: absolute;
+        width: 25vw;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: $main-color;
+    }
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+        span {
+            color: #18B2CC;
+        }
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+    }
+    &__link {
+        color: $font-color;
+        font-weight: bold;
+        &:hover {
+            color: $font-color;
+            text-decoration: none;
+        }
+        &_btn {
+            font-size: 17px;
+            background: transparent;
+            text-align: center;
+            width: 140px;
+            height: 45px;
+            border: none;
+            padding: 12px 25px;
+            color: #f8f8f8;
+            position: relative;
+            transition: .5s ease;
+            cursor: pointer;
+            z-index: 1;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 100%;
+                background: $btn-color;
+                background-size: 800% 400%;
+                transition: .4s ease;
+                z-index: -1;
+            }
+            &:hover {
+                transition-delay: .5s;
+                &:after {
+                    height: 100%;
+                    transition-delay: 0.4s;
+                    animation: gradient 3s infinite cubic-bezier(.62, .28, .23, .99) both;
+                }
+            }
+            &:active {
+                &:after {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__img {
+        z-index: 5;
+        position: relative;
+        max-width: 450px;
+        img {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            display: block;
+        }
+        &:before {
+            content:'';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 32px;
+            left: -32px;
+            border: 2px solid #fff;
+            z-index: 1;
+        }
+        &:after {
+            content:'';
+            background-image:url(../../icons/promo/dots.svg);
+            width: 124px;
+            height: 124px;
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: -62px;
+            right: -62px;
+        }
+    }
+    &__dot {
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+        // .promo__dot_1
+        &_1 {
+            width: 11px;
+            height: 11px;
+            display: block;
+            left: 24%;
+            top: 5%;
+            background-color:#18B2CC;
+        }
+        // .promo__dot_2
+        &_2 {
+            width: 8px;
+            height: 8px;
+            display: block;
+            left: 5%;
+            top: 31%;
+            background: #945ED6;
+        }
+        // .promo__dot_3
+        &_3 {
+            width: 11px;
+            height: 11px;
+            display: block;
+            left: 10%;
+            bottom: 16%;
+            background-color:#18B2CC;
+        }
+        // .promo__dot_4
+        &_4 {
+            width: 8px;
+            height: 8px;
+            display: block;
+            left: 32%;
+            top: 70%;
+            background: #945ED6;
+        }
+        // .promo__dot_5
+        &_5 {
+            width: 10px;
+            height: 10px;
+            display: block;
+            left: 50%;
+            top: 13%;
+            background: #945ED6;
+        }
+        // .promo__dot_6
+        &_6 {
+            width: 11px;
+            height: 11px;
+            display: block;
+            left: 50%;
+            bottom: 5%;
+            background-color:#18B2CC;
+        }
+    }
+    // .promo__zip
+    &__zip {
+        position: absolute;
+        width: 120px;
+        z-index: 4;
+        pointer-events: none;
+        // .promo__zip_1
+        &_1 {
+            top: 5%;
+            left: 0;
+        }
+        // .promo__zip_2
+        &_2 {
+            top: 10%;
+            right: 25vw;
+        }
+        // .promo__zip_3
+        &_3 {
+            right: 14%;
+            bottom:20%;
+        }
+        // .promo__zip_4
+        &_4 {
+            height: 120px;
+            left: 40%;
+            bottom: 0;
+        }
+    }
+}
+

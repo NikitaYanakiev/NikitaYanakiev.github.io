@@ -1,0 +1,31 @@
+.pageup {
+    display: block;
+    position: fixed;
+    z-index: 50;
+    bottom: 5%;
+    right: 5%;
+    width: 40px;
+    height:  40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+    &:before {
+        content:'';
+        width: 20px;
+        height: 20px;
+        background-color: #0F1624;
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+    img {
+        position: relative;
+        z-index: 50;
+        width: 100%;
+       
+    }
+}

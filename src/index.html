@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мое портфолио</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yanakiev.website/">
+    <meta property="og:title" content="Я web-разработчик из города Одессы">
+    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="og:image" content="img/meta.jpg">
+
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div id="page-preloader" class="preloader">
+        <div class="spinner">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <aside class="sidepanel">
+        <a href="https://t.me/Nikita_Yanakiev" class="sidepanel__link">
+            <img src="icons/social/telegram.side.svg" alt="telegram">
+        </a>
+        <a href="https://www.instagram.com/nik.yankv/" class="sidepanel__link">
+            <img src="icons/social/instagram.svg" alt="instagram">
+        </a>
+        <a href="https://github.com/NikitaYanakiev" class="sidepanel__link">
+            <img src="icons/social/github.svg" alt="github">
+        </a>
+
+        <div class="sidepanel__divider"></div>
+        <div class="sidepanel__text"><span>Социальные сети</span></div>
+    </aside>
+
+    <header class="menu">
+        <div class="menu__block">
+            <div class="menu__close">
+                <img src="icons/social/close.svg" alt="close">
+            </div>
+
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a class="menu__link-item" href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a class="menu__link-item" href="#experience">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a class="menu__link-item" href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a class="menu__link-item" href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a class="menu__link-item" href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu__social">
+                <a href="https://github.com/NikitaYanakiev">
+                    <img src="icons/social/github.menu.svg" alt="github">
+                </a>
+                <a href="https://www.instagram.com/nik.yankv/">
+                    <img src="icons/social/instagram.menu.svg"alt="instagram">
+                </a>
+                <a href="https://t.me/Nikita_Yanakiev">
+                    <img src="icons/social/telegram.menu.svg" alt="telegram">
+                </a>
+            </div>
+        </div>
+
+        <div class="menu__overlay"></div>
+
+    </header>
+
+    <section id="up" class="promo">
+
+        <span class="promo__dot promo__dot_1"></span>
+        <span class="promo__dot promo__dot_2"></span>
+        <span class="promo__dot promo__dot_3"></span>
+        <span class="promo__dot promo__dot_4"></span>
+        <span class="promo__dot promo__dot_5"></span>
+        <span class="promo__dot promo__dot_6"></span>
+        <div class="burger">
+            <span></span>
+        </div>
+        <div class="container promo__container">
+            <div class="promo__body">
+                <div class="title title_fz16 promo__subtitle">Меня зовут Никита Янакиев</div>
+                <h1 class="title title_fz48 promo__title">Я web-разработчик
+                    из города Одессы <span>.</span></h1>
+                <div class="promo__btns">
+                    <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                    <a href="#about" class="promo__link promo__link_btn">Про меня</a>
+                </div>
+            </div>
+            <div class="promo__img">
+                <img src="img/promo_photo.jpg" alt="photo">
+            </div>
+        </div>
+        <img class="promo__zip promo__zip_1" src="icons/promo/zip.svg" alt="zip">
+        <img class="promo__zip promo__zip_2" src="icons/promo/zip.svg" alt="zip">
+        <img class="promo__zip promo__zip_3" src="icons/promo/zip.svg" alt="zip">
+        <img class="promo__zip promo__zip_4" src="icons/promo/zip_vertical.svg" alt="zip">
+
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="about__wrapper">
+                <div class="about__photo">
+                    <img src="img/main_photo.jpg" alt="photo">
+                </div>
+                <div class="about__descr">
+                    <h2 class="title title_fz16 about__title">Про меня</h2>
+                    <div class="title title_fz36 about__subtitle">Меня зовут Никита</div>
+                    <div class="divider"></div>
+                    <p class="about__text">Всех приветствуют на своем сайте-портфолио. Меня зовут Янакиев Никита, 1999
+                        года рождения. <br>
+                        На данный момент, я проживаю в городе Одесса. Сейчас я полностью посвящаю себя изучению
+                        Web-разбработки. Если более конкретней - меня интересует Front-End направление. <br>
+                        Моя главная цель - стать востребованным Front-End разработчиком и открыть свою IT-компанию.
+                        <br><br>
+                        Основные направления в которых я хочу преуспеть:
+                    </p>
+                </div>
+                <div class="about__skills">
+                    <div class="about__skills-item">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/web_development.svg" alt="web-dev">
+                        </div>
+                        <div>
+                            <div class="title title_fz14">
+                                Web-разработка
+                            </div>
+                            <div class="about__skills-text">
+                                Изучение современных тенденций в веб-разработке, использование только последних
+                                тенхологий для разработки конкурерующего и релевантного интернет-проекта
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__skills-item">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/design.svg" alt="design">
+                        </div>
+                        <div>
+                            <div class="title title_fz14">
+                                UI/UX Design
+                            </div>
+                            <div class="about__skills-text">
+                                Следования нынешним тенденция в направлении дизайна.
+                                Максимальный приоритет и возведения в абсолют дизайн веб-сайта
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__skills-item">
+                        <div class="about__skills-circle">
+                            <img src="icons/about_me/framework.svg" alt="framework">
+                        </div>
+                        <div>
+                            <div class="title title_fz14">
+                                Frameworks
+                            </div>
+                            <div class="about__skills-text">
+                                Фреймворки сейчас занимают ключевую роль в создании веб-приложения.
+                                Поэтому моя задача, как разработчика, изучить современные фреймоврки (React, Vue) для
+                                достижения самых высоких результатов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience" class="resume">
+        <div class="container">
+            <h2 class="title title_fz16 title__section-title">Опыт</h2>
+            <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
+            <div class="divider"></div>
+
+            <div class="resume__wrapper">
+                <div class="resume__column">
+                    <h3 class="title title_fz20 resume__column-title">Образование</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/university.svg" alt="university">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        ОМУ РП им. А. Соляника
+                                    </h4>
+                                    <div class="resume__item-location">Диплом мл. специалиста | Одесса (2014-2018)</div>
+                                </div>
+
+                                <div class="resume__item-body">
+                                    Закончил мореходное училище с дипломом мл. специалиста по специальности
+                                    "Судовождение"
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        Курс Front-end Basic
+                                    </h4>
+                                    <div class="resume__item-location">Hillel | Одесса (2022)</div>
+                                </div>
+
+                                <div class="resume__item-body">
+                                    С безупречным отличием закончил данный курс. 
+                                    <a href="https://certificate.ithillel.ua/view/44621956">Сертификат</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        Udemy
+                                    </h4>
+                                    <div class="resume__item-location">Курсы по Web-разработке</div>
+                                </div>
+
+                                <div class="resume__item-body">
+                                    Закончил курс <a href="https://www.udemy.com/course/webdeveloper/">WEB-разбработчик
+                                        2022</a> от Иван Петриченко. Также в процессе изучения
+                                    курса <a href="https://www.udemy.com/course/javascript_full/">"Полный курс по
+                                        JavaScript + React - с нуля до результата"</a> от Иван Петриченко.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resume__column">
+                    <h3 class="title title_fz20 resume__column-title">Опыт работы</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/developer.svg" alt="developer">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        Копирайтер
+                                    </h4>
+                                    <div class="resume__item-location">Одесса (2018-2019)</div>
+                                </div>
+
+                                <div class="resume__item-body">
+                                    Занимался копирайтерством, писал тексты на различные темы.
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="icons/experience/developer.svg" alt="developer">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        Менеджер по продажам
+                                    </h4>
+                                    <div class="resume__item-location">Одесса (2019-2022)</div>
+                                </div>
+
+                                <div class="resume__item-body">
+                                    Работал в компании по продажи авто-аксесуаров, через CRM систему. Общался с
+                                    заказчиками, осуществлял контроль заказов.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="title title_fz16 title__section-title">Навыки</h2>
+            <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
+            <div class="divider"></div>
+
+            <div class="skills__wrapper">
+                <div class="skills__item">
+                    <div class="skills__item-icon">
+                        <img src="icons/skills/html5.svg" alt="html5">
+                    </div>
+                    <h3 class="title title_fz14 skills__item-title">HTML5</h3>
+                    <div class="skills__item-text">Именно он создает каркас вашего сайта или приложения, а пятая версия
+                        позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
+                </div>
+
+                <div class="skills__item">
+                    <div class="skills__item-icon">
+                        <img src="icons/skills/css3.svg" alt="css3">
+                    </div>
+                    <h3 class="title title_fz14 skills__item-title">CSS3</h3>
+                    <div class="skills__item-text">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид
+                        вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                </div>
+
+                <div class="skills__item">
+                    <div class="skills__item-icon">
+                        <img src="icons/skills/js.svg" alt="js">
+                    </div>
+                    <h3 class="title title_fz14 skills__item-title">Java Script</h3>
+                    <div class="skills__item-text">Этот язык программирования позволяет оживить все что угодно:
+                        слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                </div>
+
+                <div class="skills__item">
+                    <div class="skills__item-icon">
+                        <img src="icons/skills/jquery.svg" alt="jquery">
+                    </div>
+                    <h3 class="title title_fz14 skills__item-title">Jquery</h3>
+                    <div class="skills__item-text">Библиотека Jquery позволит ускорить разработку. Без необходимости
+                        интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
+                </div>
+
+                <div class="skills__item">
+                    <div class="skills__item-icon">
+                        <img src="icons/skills/sass.svg" alt="sass">
+                    </div>
+                    <h3 class="title title_fz14 skills__item-title">SCSS</h3>
+                    <div class="skills__item-text">Препроцессор SСSS упрощает написание CSS-кода и позволяет динамически
+                        им манипулировать. Это отличный способ создания более функциональных CSS-кодов, который
+                        позволяет ускорить выполнение ежедневной работы веб-разработчиков и дизайнеров.</div>
+                </div>
+
+                <div class="skills__item">
+                    <div class="skills__item-icon">
+                        <img src="icons/skills/gulp.svg" alt="gulp">
+                    </div>
+                    <h3 class="title title_fz14 skills__item-title">Gulp</h3>
+                    <div class="skills__item-text">Gulp - это инструмент для автоматизации рутинных задач, которые
+                        возникают при веб-разработке.</div>
+                </div>
+
+                <div class="skills__item">
+                    <div class="skills__item-icon">
+                        <img src="icons/skills/git.svg" alt="sass">
+                    </div>
+                    <h3 class="title title_fz14 skills__item-title">Git</h3>
+                    <div class="skills__item-text">Git — распределённая система контроля версий, которая даёт
+                        возможность разработчикам отслеживать изменения в файлах и работать над одним проектом совместно
+                        с коллегами.</div>
+                </div>
+
+            </div>
+
+            <div class="skills__ratings">
+
+                <div class="skills__ratings-item">
+                    <div class="title title_fz14 skills__ratings-title">Создание сайтов</div>
+                    <div data-digits-counter class="skills__ratings-counter">100%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skills__ratings-item">
+                    <div class="title title_fz14 skills__ratings-title">Создание концепции сайта</div>
+                    <div data-digits-counter class="skills__ratings-counter">70%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skills__ratings-item">
+                    <div class="title title_fz14 skills__ratings-title">Работа в коллективе</div>
+                    <div data-digits-counter class="skills__ratings-counter">90%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skills__ratings-item">
+                    <div class="title title_fz14 skills__ratings-title">Креативность</div>
+                    <div data-digits-counter class="skills__ratings-counter">85%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skills__ratings-item">
+                    <div class="title title_fz14 skills__ratings-title">Создание дизайна</div>
+                    <div data-digits-counter class="skills__ratings-counter">70%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skills__ratings-item">
+                    <div class="title title_fz14 skills__ratings-title">Soft skills</div>
+                    <div data-digits-counter class="skills__ratings-counter">80%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="title title_fz16 title__section-title">Портфолио</h2>
+            <div class="title title_fz36 title__section-subtitle">Мои работы</div>
+            <div class="divider"></div>
+
+            <div class="portfolio__wrapper">
+                <a href="../projects/aperture/index.html" class="portfolio__item item-portfolio">
+                    <img src="img/works/aperture.jpg" alt="aperture">
+                    <div class="item-portfolio__info">
+                        <div class="item-portfolio__title">Aperture</div>
+                    </div>
+                </a>
+
+                <a href="../projects/pulse/index.html" class="portfolio__item item-portfolio">
+                    <img src="img/works/pulse.jpg" alt="pulse">
+                    <div class="item-portfolio__info">
+                        <div class="item-portfolio__title">Pulse</div>
+                    </div>
+                </a>
+
+                <a href="../projects/crappo/index.html" class="portfolio__item item-portfolio">
+                    <img src="img/works/crappo.png" alt="crappo">
+                    <div class="item-portfolio__info">
+                        <div class="item-portfolio__title">Crappo</div>
+                    </div>
+                </a>
+
+                <a href="../projects/furniture/index.html" class="portfolio__item vertical item-portfolio">
+                    <img src="img/works/furniture.jpg" alt="furniture">
+                    <div class="item-portfolio__info">
+                        <div class="item-portfolio__title">Furniture</div>
+                    </div>
+                </a>
+
+                <a href="../projects/food/index.html" class="portfolio__item  item-portfolio">
+                    <img src="img/works/food.jpg" alt="food">
+                    <div class="item-portfolio__info">
+                        <div class="item-portfolio__title">food</div>
+                    </div>
+                </a>
+
+                <a href="../projects/cinemax/index.html" class="portfolio__item horizonal item-portfolio">
+                    <img src="img/works/cinemax.jpg" alt="cinemax">
+                    <div class="item-portfolio__info">
+                        <div class="item-portfolio__title">cinemax</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts" class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/main_photo2.jpg" alt="photo">
+                </div>
+                <div class="contacts__descr">
+                    <h2 class="title title_fz16 contacts__title">Контакты</h2>
+                    <div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
+                    <div class="divider"></div>
+
+                    <div class="title title_fz14 contacts__text">
+                        Любым удобным для вас способом:
+                    </div>
+                    <div class="contacts__social">
+                        <a href="https://www.facebook.com/nikita.yanakiev.5/" class="contacts__link">
+                            <img src="icons/social/facebook_straight.svg" alt="facebook">
+                        </a>
+                        <a href="https://t.me/Nikita_Yanakiev" class="contacts__link">
+                            <img src="icons/social/telegram_straight.svg" alt="telegram">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social/instagram_straight.svg" alt="instagram">
+                        </a>
+                    </div>
+                    <div class="title title_fz14 contacts__text">
+                        Или оставьте ваши данные и я сам вам напишу:
+                    </div>
+
+                    <form action="#" class="contacts__form" id="form">
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button type="submit" class="contacts__btn btn">Отправить сообщение</button>
+
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <a href="#up" class="pageup">
+        <img src="icons/promo/up.svg" alt="up">
+    </a>
+
+    <script src="js/preloader.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
