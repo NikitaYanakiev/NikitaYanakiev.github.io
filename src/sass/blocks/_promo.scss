@@ -90,7 +90,7 @@
     &__img {
         z-index: 5;
         position: relative;
-        max-width: 450px;
+        max-width: 300px;
         img {
             position: relative;
             z-index: 3;
@@ -101,23 +101,25 @@
             content:'';
             display: block;
             position: absolute;
-            width: 100%;
+            border-radius: 50%;
+            width: 120%;
             height: 100%;
             top: 32px;
             left: -32px;
-            border: 2px solid #fff;
+            border: 3px solid #fff;
             z-index: 1;
         }
         &:after {
             content:'';
             background-image:url(../../icons/promo/dots.svg);
+            background-repeat: no-repeat;
             width: 124px;
-            height: 124px;
+            height: 134px;
             display: block;
             position: absolute;
             z-index: 1;
-            top: -62px;
-            right: -62px;
+            top: 0;
+            right: -50px;
         }
     }
     &__dot {
@@ -198,7 +200,7 @@
         // .promo__zip_3
         &_3 {
             right: 14%;
-            bottom:20%;
+            bottom:10%;
         }
         // .promo__zip_4
         &_4 {

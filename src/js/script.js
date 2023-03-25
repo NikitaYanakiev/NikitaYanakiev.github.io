@@ -3,7 +3,6 @@
 const burger = document.querySelector('.burger'),
         menu = document.querySelector('.menu'),
         overlay = document.querySelector('.menu__overlay'),
-        closeElem = document.querySelector('.menu__close'),
         body = document.querySelector('body');
 
 burger.addEventListener('click', () => {
@@ -12,11 +11,11 @@ burger.addEventListener('click', () => {
     body.classList.toggle('lock');
 });
 
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
-    burger.classList.remove('active');
-    body.classList.remove('lock');
-});
+// closeElem.addEventListener('click', () => {
+//     menu.classList.remove('active');
+//     burger.classList.remove('active');
+//     body.classList.remove('lock');
+// });
 
 
 overlay.addEventListener('click', () => {

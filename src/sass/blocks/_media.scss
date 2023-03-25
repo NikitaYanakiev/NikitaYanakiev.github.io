@@ -39,7 +39,7 @@
             grid-template-columns: repeat(auto-fit, 280px);
             grid-auto-rows: 280px;
             justify-content: center;
-            .horizonal, .vertical {
+            .horizonal, .vertical, .big {
                 grid-column: unset;
                 grid-row: unset;
 
@@ -77,8 +77,10 @@
     }
     .about {
         &__wrapper {
-            grid-template-columns: 300px 380px;
+            grid-template-columns: 300px 3
+            80px;
         }
+        
         &__skills {
             grid-template-columns: 380px;
             grid-auto-rows: minmax(115px, auto);
@@ -95,10 +97,16 @@
     }
     .skills {
         &__wrapper {
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
         }
         &__ratings {
             grid-template-columns: repeat(auto-fit,320px);
+        }
+        &__item {
+            &-icon {
+                min-width: 25%;
+               
+            }
         }
     }
     .contacts {
@@ -174,10 +182,11 @@
     .skills {
         padding-top: 40px;
         &__wrapper {
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
             padding-top: 40px;
 
         }
+       
     }
     .portfolio {
         padding-top: 40px;
@@ -271,13 +280,14 @@
     }
     .skills {
         &__wrapper {
-            grid-template-columns: 285px;
+            grid-template-columns: repeat(2, 1fr);
             justify-content: center;
             row-gap: 30px;
             padding: 30px 0 30px 0;
 
 
         }
+        
         &__ratings {
             margin-top: 48px;
             grid-template-columns: repeat(auto-fit,280px);
